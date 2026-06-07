@@ -363,7 +363,7 @@ nav ul li a{
 .hero{
     flex-direction:column;
     text-align:center;
-    padding:50px 20px;
+    padding:50px 10px;
 }
 
 .hero-content{
@@ -371,15 +371,21 @@ nav ul li a{
 }
 
 .hero-content h1{
-    font-size:56px;
+    font-size:35px;
     line-height:1.1;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
 .hero-content p{
-    font-size:28px;
+    font-size:20px;
     line-height:1.5;
-    margin-bottom:30px;
+    margin-bottom:10px;
+}
+
+.hero-content a{
+    font-size:16px;
+    line-height:1.5;
+    margin-bottom:10px;
 }
 
 .hero-buttons{
