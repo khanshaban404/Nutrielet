@@ -310,33 +310,181 @@ footer{
     margin:0 15px;
 }
 
+.menu-toggle{
+    display:none;
+    font-size:34px;
+    cursor:pointer;
+    color:#0b5f75;
+}
+
 /* MOBILE */
 
 @media(max-width:768px){
 
+/* NAVBAR */
+
 nav{
-    flex-direction:column;
-    gap:20px;
+    position:relative;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu-toggle{
+    display:block;
 }
 
 nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
+    position:absolute;
+    top:90px;
+    right:0;
+    width:250px;
+    background:white;
+    flex-direction:column;
+    align-items:center;
+    padding:30px 20px;
+    gap:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+    display:none;
+    border-radius:0 0 0 20px;
 }
 
+nav ul.active{
+    display:flex;
+}
+
+nav ul li a{
+    font-size:22px;
+}
+
+/* HERO SECTION */
+
 .hero{
+    flex-direction:column;
     text-align:center;
+    padding:50px 20px;
+}
+
+.hero-content{
+    width:100%;
 }
 
 .hero-content h1{
-    font-size:42px;
+    font-size:56px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:28px;
+    line-height:1.5;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    gap:20px;
+}
+
+.btn{
+    width:100%;
+    max-width:320px;
+    text-align:center;
+    font-size:24px;
+    padding:18px 25px;
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+    width:100%;
+    margin-top:30px;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:100%;
+    border-radius:25px;
+}
+
+/* PRODUCTS */
+
+.products{
+    padding:60px 20px;
 }
 
 .section-title{
-    font-size:36px;
+    font-size:42px;
 }
 
-.about-text h2{
-    font-size:36px;
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+.product-card{
+    padding:30px 20px;
+}
+
+.product-card h3{
+    font-size:34px;
+}
+
+.price{
+    font-size:32px;
+}
+
+.product-card ul li{
+    font-size:22px;
+}
+
+/* ABOUT */
+
+.about,
+.reviews,
+.contact{
+    padding:60px 20px;
+}
+
+.about-text{
+    font-size:22px;
+    line-height:1.7;
+}
+
+/* REVIEWS */
+
+.review-card{
+    padding:25px;
+    font-size:20px;
+}
+
+/* CONTACT */
+
+.contact-box{
+    padding:25px;
+}
+
+.contact-box p{
+    font-size:20px;
+    line-height:1.7;
+}
+
+/* FOOTER */
+
+footer{
+    padding:35px 20px;
+}
+
+.social-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.social-links a{
+    font-size:20px;
 }
 }

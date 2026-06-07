@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    
 
 <header>
 
@@ -26,13 +27,19 @@
 Nutri Elet
 </div>
 
-<ul>
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<ul id="mobile-menu">
 <li><a href="#home">Home</a></li>
 <li><a href="#products">Products</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#reviews">Reviews</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
+</nav>
 
 </nav>
 
@@ -109,7 +116,7 @@ Pumpkin Seeds
 </ul>
 
 <a 
-href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Pumpkin%20Seeds"
+href="https://wa.me/919511119412?text=Hi%20I%20want%20to%20order%20Pumpkin%20Seeds"
 target="_blank"
 class="whatsapp-btn">
 
@@ -144,7 +151,7 @@ Chia Seeds
 </ul>
 
 <a 
-href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Chia%20Seeds"
+href="https://wa.me/919511119412?text=Hi%20I%20want%20to%20order%20Chia%20Seeds"
 target="_blank"
 class="whatsapp-btn">
 
@@ -179,7 +186,7 @@ Flax Seeds
 </ul>
 
 <a 
-href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20Flax%20Seeds"
+href="https://wa.me/919511119412?text=Hi%20I%20want%20to%20order%20Flax%20Seeds"
 target="_blank"
 class="whatsapp-btn">
 
@@ -344,5 +351,19 @@ WhatsApp
 
 </footer>
 
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("click", function () {
+            mobileMenu.classList.toggle("active");
+        });
+
+    });
+
+</script>
 </body>
 </html>
