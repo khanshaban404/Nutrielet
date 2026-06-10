@@ -23,30 +23,23 @@
     <!-- Floating WhatsApp Icon -->
     <a href="https://wa.me/919511119412" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">💬</a>
 
-    <!-- Sticky Bottom Bar -->
-    <!-- <div class="bottom-order-bar">
-        <a href="https://wa.me/918004340041">🛒 Order Mustard Oil</a>
-    </div> -->
-
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="assets/logo.png" alt="Nutri Elet">
-            </a>
-            <!-- <div class="menu-toggle" id="menu-toggle">
-                ☰
-            </div> -->
-            <div class="nav-links">
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a href="#process">Process</a>
-                <a href="#products">Products</a>
-                <a href="#contact">Contact</a>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Nutri Elet -->
+                <img src="assets/logo.png" alt="Nutri Elet Banner">
             </div>
-            <!-- <a href="https://wa.me/919511119412" class="order-btn">Order Now</a> -->
-        </div>
-    </nav>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul id="mobile-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
@@ -58,7 +51,7 @@
                     protein,
                     omega-3 and fiber for smart snacking.</p>
                 <div class="hero-buttons">
-                    <a href="https://wa.me/919511119412" class="btn-primary">Order</a>
+                    <a href="#order" class="btn-primary">Order</a>
                     <a href="#products" class="btn-outline">Explore Products</a>
                 </div>
             </div>
@@ -185,7 +178,7 @@
     </section>
 
     <!-- ORDER SECTION-->
-    <section id="process">
+    <section id="order">
         <div class="container">
             <div class="text-center">
                 <span class="section-tag">Packing To Door Step</span>
@@ -243,28 +236,12 @@
         </div>
     </section>
 
-    <!-- Trust Features Section -->
-    <!-- <section id="why-us" style="background: var(--ivory);">
-        <div class="container">
-            <div class="text-center">
-                <span class="section-tag">Why ShudhVeda</span>
-                <h2 class="section-title">Why Families Trust Us</h2>
-            </div>
-            <div class="grid-4">
-                <div class="trust-card">✔ Premium Seeds</div>
-                <div class="trust-card">✔ Modern Processing</div>
-                <div class="trust-card">✔ Hygienic Packaging</div>
-                <div class="trust-card">✔ Consistent Quality</div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Benefits Section -->
     <section id="benefits">
         <div class="container">
             <div class="text-center">
                 <span class="section-tag">Benefits</span>
-                <h2 class="section-title">The ShudhVeda Difference</h2>
+                <h2 class="section-title">The Nutri Elet Difference</h2>
             </div>
             <div class="grid-3">
                 <div class="trust-card">🌿 Rich Aroma</div>
@@ -275,7 +252,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" style="background: var(--ivory);">
+    <section id="reviews" style="background: var(--ivory);">
         <div class="container">
             <div class="text-center">
                 <span class="section-tag">Customer Feedback</span>
@@ -330,8 +307,15 @@
                 <div class="form-card">
                     <input id="name" type="text" placeholder="Your Name" required>
                     <select id="product">
-                        <option value="500 ML Bottle">500 ML Bottle</option>
-                        <option value="1 Liter Bottle">1 Liter Bottle</option>
+                        <option value="pumpkin seed">Pumpkin Seed</option>
+                        <option value="chia seed">Chia Seed</option>
+                        <option value="flax seed">Flax Seed</option>
+                        <option value="sunflower seed">Sunflower Seed</option>
+                        <option value="basil seed">Basil Seed</option>
+                    </select>
+                    <select id="product_varient">
+                        <option value="100GM">100GM</option>
+                        <option value="200GM">200GM</option>
                     </select>
                     <input id="quantity" type="number" placeholder="Quantity (e.g. 2)" min="1" required>
                     <textarea id="address" placeholder="Your Full Delivery Address (Poora Pata)" rows="3"
@@ -350,10 +334,11 @@
                 <span class="section-tag">About NUTRI ELET</span>
                 <h2 class="section-title">Rooted In Purity</h2>
                 <p style="margin-top: 20px; font-size: 16px; line-height: 1.8; color: var(--text-light);">
-                    ShudhVeda was founded with a simple mission: to provide high-quality mustard oil that preserves
+                    NUTRI ELET was founded in 2025 with a simple mission: to provide high-quality healthy seeds that
+                    preserves
                     purity, tradition and trust.
                     Every seed is carefully sourced from farmers, cleaned, dried and processed using modern machinery to
-                    ensure quality and consistency in every bottle.
+                    ensure quality and consistency in every Packets.
                 </p>
             </div>
         </div>
@@ -367,12 +352,12 @@
                 <h2 class="section-title">Frequently Asked Questions</h2>
             </div>
             <div style="max-width: 800px; margin: 40px auto 0;">
-                <div class="trust-card" style="text-align: left; margin-bottom: 15px;">
+                <!-- <div class="trust-card" style="text-align: left; margin-bottom: 15px;">
                     <h3 style="font-size: 16px; color: var(--primary);">Is ShudhVeda Mustard Oil suitable for daily
                         cooking?</h3>
                     <p style="margin-top: 8px; color: var(--text-light); font-weight: 400; font-size: 14px;">Yes, it is
                         perfectly crafted for everyday household cooking and frying.</p>
-                </div>
+                </div> -->
                 <div class="trust-card" style="text-align: left; margin-bottom: 15px;">
                     <h3 style="font-size: 16px; color: var(--primary);">What pack sizes are available?</h3>
                     <p style="margin-top: 8px; color: var(--text-light); font-weight: 400; font-size: 14px;">Currently,
@@ -420,8 +405,8 @@
     <section style="background: var(--primary); color: var(--white); text-align: center; padding: 70px 0;">
         <div class="container">
             <h2 style="font-size: 40px; font-weight: 800; line-height: 1.3;">Ready To Experience Purity?</h2>
-            <p style="margin-top: 15px; font-size: 18px; opacity: .9;">Order ShudhVeda Mustard Oil Today.</p>
-            <a href="https://wa.me/918004340041" class="btn-primary"
+            <p style="margin-top: 15px; font-size: 18px; opacity: .9;">Order Nutri Elet Healthy Seeds Today.</p>
+            <a href="https://wa.me/919511119412" class="btn-primary"
                 style="background: var(--white); color: var(--primary); margin-top: 25px; font-weight: 700;">Order
                 Now</a>
         </div>
@@ -476,18 +461,43 @@
             let product = document.getElementById("product").value;
             let quantity = document.getElementById("quantity").value.trim();
             let address = document.getElementById("address").value.trim();
+            let product_varient = document.getElementById("product_varient").value.trim();
+
 
             if (!name || !quantity || !address) {
                 alert("Please fill Name, Quantity, and Address before placing an order.");
                 return;
             }
 
-            let message = `Hello ShudhVeda,\n\nName: ${name}\nProduct: ${product}\nQuantity: ${quantity}\nAddress: ${address}\n\nI would like to place an order.`;
-            let url = `https://wa.me/918004340041?text=${encodeURIComponent(message)}`;
+            let message = `Hello Nutri Elet,\n\nName: ${name}\nProduct: ${product}\nVarient:${product_varient}\nQuantity: ${quantity}\nAddress: ${address}\n\nI would like to place an order.`;
+            let url = `https://wa.me/919511119412?text=${encodeURIComponent(message)}`;
 
-            alert("Thank you for choosing ShudhVeda. Redirecting to WhatsApp.");
+            alert("Thank you for choosing Nutri Elet. Redirecting to WhatsApp.");
             window.open(url, "_blank");
         }
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            // Toggle drawer
+            menuToggle.addEventListener("click", function () {
+                mobileMenu.classList.toggle("active");
+            });
+
+            // Close drawer when menu item clicked
+            const navLinks = mobileMenu.querySelectorAll("a");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    mobileMenu.classList.remove("active");
+                });
+            });
+
+        });
     </script>
 </body>
 
